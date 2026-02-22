@@ -28,13 +28,22 @@
         
 
         <label for="password" class="password">PASSWORD<br></label>
-        <input type="password" id="password" name="password" placeholder="Enter strong password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" required><br>
+        <input type="password"
+         id="password" 
+         name="password"
+         minlength="8" 
+         placeholder="Enter strong password"
+         title="Must be 8+ characters and include uppercase, lowercase, special character, and a number." 
+         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
+         required><br>
+         <span class="error">8+ characters. Must include 1 uppercase, 1 lowercase, 1 special character, and 1 number.</span>
 
         <label for="confirm-password" class="confirm-password">CONFIRM PASSWORD<br></label>
         <input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" title="Re-enter the same password" required><br>
+        <span class="error">Passwords must match.</span>
     </form>
    </div>
-   <submit type="submit" value="create-account">Create Account</submit>
+   <button type="submit" value="create-account">Create Account</button>
    <p>Already have an account? <a href="login.html">Log in here</a></p> 
 </body>
 </html>
