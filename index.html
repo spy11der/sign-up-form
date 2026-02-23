@@ -13,22 +13,57 @@
 <body>
    <div>
     <h1>Let's do this!</h1>
+
     <form action="submit-form" method="POST">
-        <label for="first-name" class="first-name">FIRST NAME<br></label>
-        <input type="text" id="first-name" name="first-name" required><br>
+        <label for="first-name" 
+        class="first-name">FIRST NAME<br>
+        </label>
+        <input 
+        type="text" 
+        id="first-name" 
+        name="first-name" 
+        required><br>
 
-        <label for="last-name" class="last-name">LAST NAME<br></label>
-        <input type="text" id="last-name" name="last-name" required><br>
+        <label 
+        for="last-name" 
+        class="last-name">LAST NAME<br>
+        </label>
+        <input 
+        type="text" 
+        id="last-name" 
+        name="last-name" 
+        required><br>
 
-        <label for="email" class=email>EMAIL<br></label>
-        <input type="email" id="email" name="email" value="example@email.com" required><br>
+        <label 
+        for="email" 
+        class=email>EMAIL<br>
+        </label>
+        <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        value="example@email.com" 
+        required><br>
 
-        <label for="phone-number" class="phone-number">PHONE NUMBER<br></label>
-        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" value="1234567890" required><br>
+        <label 
+        for="phone-number" 
+        class="phone-number">PHONE NUMBER<br>
+        </label>
+        <input 
+        type="tel" 
+        id="phone-number" 
+        name="phone-number" 
+        pattern="[0-9]{10}" 
+        value="1234567890" 
+        required><br>
         
 
-        <label for="password" class="password">PASSWORD<br></label>
-        <input type="password"
+        <label 
+        for="password" 
+        class="password">PASSWORD<br>
+        </label>
+        <input 
+        type="password"
          id="password" 
          name="password"
          minlength="8" 
@@ -38,8 +73,17 @@
          required><br>
          <span class="error">8+ characters. Must include 1 uppercase, 1 lowercase, 1 special character, and 1 number.</span>
 
-        <label for="confirm-password" class="confirm-password">CONFIRM PASSWORD<br></label>
-        <input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" title="Re-enter the same password" required><br>
+        <label 
+        for="confirm-password" 
+        class="confirm-password">CONFIRM PASSWORD<br>
+        </label>
+        <input 
+        type="password" 
+        id="confirm-password" 
+        name="confirm-password" 
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
+        title="Re-enter the same password" 
+        required><br>
         <span class="error">Passwords must match.</span>
     </form>
    </div>
