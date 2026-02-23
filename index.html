@@ -11,7 +11,16 @@
     <p>You know you want to.</p>
 </header>
 <body>
+    <div class="container">
+
+        <div class="left-panel">
+        <div class="logo">
+            <img src="images/odin-line.png" alt="Odin Logo">
+            <span>ODIN</span>
+    </div>
    <div>
+
+    <div class="right-panel">
     <h1>Let's do this!</h1>
 
     <form action="submit-form" method="POST">
@@ -22,6 +31,7 @@
         type="text" 
         id="first-name" 
         name="first-name" 
+        placeholder="First Name"
         required><br>
 
         <label 
@@ -32,6 +42,7 @@
         type="text" 
         id="last-name" 
         name="last-name" 
+        placeholder="Last Name"
         required><br>
 
         <label 
@@ -41,7 +52,8 @@
         <input 
         type="email" 
         id="email" 
-        name="email" 
+        name="email"
+        placeholder="example@email.com" 
         value="example@email.com" 
         required><br>
 
@@ -52,9 +64,10 @@
         <input 
         type="tel" 
         id="phone-number" 
-        name="phone-number" 
-        pattern="[0-9]{10}" 
-        value="1234567890" 
+        name="phone-number"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+        value="123-456-7890" 
         required><br>
         
 
@@ -81,6 +94,9 @@
         type="password" 
         id="confirm-password" 
         name="confirm-password" 
+        minlength="8" 
+        placeholder="Confirm Password"
+        title="Must match the password entered above."
         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
         title="Re-enter the same password" 
         required><br>
