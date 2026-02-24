@@ -9,104 +9,107 @@
 
 <body>
     <div class="container">
-
-        <div class="left-panel">
+      <div class="left-panel">
         <div class="logo">
-            <img src="images/odin-line.png" alt="Odin Logo">
-            <span>ODIN</span>
+          <img src="images/odin-line.png" alt="Odin Logo">
+          <span>ODIN</span>
+      </div>
     </div>
-   <div>
 
     <div class="right-panel">
-        <div class="intro">
-        <header>
-    <p>This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.</p>
-    <p><em>You know you want to.</em></p>
-        </div>
-    </header>
+      <div class="intro">
+        <p>This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.</p>
+        <p><em>You know you want to.</em></p>
+      </div>
+    <div class="form-card">
     <h1>Let's do this!</h1>
+  <form class="signup-form" action="#" method="POST">
+  <div class="field">
+    <label for="first-name">FIRST NAME *</label>
+    <input
+      type="text"
+      id="first-name"
+      name="first-name"
+      placeholder="First Name"
+      pattern="[A-Za-z]{2,}"
+      title="Only letters. Minimum 2 characters."
+      required
+    >
+  </div>
 
-    <form action="#" method="POST">
-        <label for="first-name" 
-        class="first-name">FIRST NAME<br>
-        </label>
-        <input 
-        type="text" 
-        id="first-name" 
-        name="first-name" 
-        placeholder="First Name"
-        required><br>
+  <div class="field">
+    <label for="last-name">LAST NAME *</label>
+    <input
+      type="text"
+      id="last-name"
+      name="last-name"
+      placeholder="Last Name"
+      pattern="[A-Za-z]{2,}"
+      title="Only letters. Minimum 2 characters."
+      required
+    >
+  </div>
 
-        <label 
-        for="last-name" 
-        class="last-name">LAST NAME<br>
-        </label>
-        <input 
-        type="text" 
-        id="last-name" 
-        name="last-name" 
-        placeholder="Last Name"
-        required><br>
+  <div class="field">
+    <label for="email">EMAIL *</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@email.com"
+      required
+    >
+  </div>
 
-        <label 
-        for="email" 
-        class=email>EMAIL<br>
-        </label>
-        <input 
-        type="email" 
-        id="email" 
-        name="email"
-        placeholder="example@email.com" 
-        value="example@email.com" 
-        required><br>
+  <div class="field">
+    <label for="phone-number">PHONE NUMBER *</label>
+    <input
+      type="tel"
+      id="phone-number"
+      name="phone-number"
+      placeholder="123-456-7890"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      title="Format: 123-456-7890"
+      required
+    >
+  </div>
 
-        <label 
-        for="phone-number" 
-        class="phone-number">PHONE NUMBER<br>
-        </label>
-        <input 
-        type="tel" 
-        id="phone-number" 
-        name="phone-number"
-        placeholder="123-456-7890"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-        value="123-456-7890" 
-        required><br>
-        
+  <div class="field">
+    <label for="password">PASSWORD *</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Enter strong password"
+      minlength="8"
+      pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}"
+      title="Must be 8+ characters and include uppercase, lowercase, number, and special character."
+      required
+    >
+  </div>
 
-        <label 
-        for="password" 
-        class="password">PASSWORD<br>
-        </label>
-        <input 
-        type="password"
-         id="password" 
-         name="password"
-         minlength="8" 
-         placeholder="Enter strong password"
-         title="Must be 8+ characters and include uppercase, lowercase, special character, and a number." 
-         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
-         required><br>
-         <span class="error">8+ characters. Must include 1 uppercase, 1 lowercase, 1 special character, and 1 number.</span>
+  <div class="field">
+    <label for="confirm-password">CONFIRM PASSWORD *</label>
+    <input
+      type="password"
+      id="confirm-password"
+      name="confirm-password"
+      placeholder="Re-enter password"
+      minlength="8"
+      required
+    >
+  </div>
 
-        <label 
-        for="confirm-password" 
-        class="confirm-password">CONFIRM PASSWORD<br>
-        </label>
-        <input 
-        type="password" 
-        id="confirm-password" 
-        name="confirm-password" 
-        minlength="8" 
-        placeholder="Confirm Password"
-        title="Must match the password entered above."
-        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}" 
-        title="Re-enter the same password" 
-        required><br>
-        <span class="error">Passwords must match.</span>
-    </form>
-   </div>
-   <button type="submit" value="create-account">Create Account</button>
-   <p>Already have an account? <a href="login.html">Log in here</a></p> 
+  <button type="submit" class="create-account">
+    Create Account
+  </button>
+
+</form>
+<p class="login">
+    Already have an account? <a href="#">Log in</a>
+  </p>
+      </div>
+     </div>
+    </div>
 </body>
 </html>

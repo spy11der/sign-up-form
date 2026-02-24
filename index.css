@@ -12,9 +12,9 @@ body {
     margin: 0;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
+.container {
+    display: flex;
+    height: 100vh;
 }
 
 .logo {
@@ -33,18 +33,13 @@ header {
 .logo span {
     font-family: "Norse", serif;
     font-size: 72px;
-    opacity: 0.8;
+    opacity: 0.95;
     color: #333;
 }
 
 .logo img {
     height: 90px;
     width: auto;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
 }
 
 .left-panel {
@@ -59,16 +54,80 @@ header {
     width: 65%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     background: #f7f7f7;
+    padding: 60px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-}
-
-input {
+.form-card {
+    background: #fff;
+    padding: 30px 40px 40px;
     width: 100%;
-    max-width: 260px;
+    max-width: 800px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    max-width: 700px;
+}
+
+.field {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.field label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.field input {
+  height: 36px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:invalid {
+  border: 1px solid #d9534f;
+}
+
+input:valid {
+  border: 1px solid #5cb85c;
+}
+
+label::after {
+  content: " *";
+  color: #d9534f;
+}
+
+.field input {
+    width: 100%;
+}
+
+.create-account {
+  width: 200px;
+  height: 45px;
+  background-color: #596D48;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
